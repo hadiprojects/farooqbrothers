@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printing Press & Wallpaper Shop</title>
+  <link rel="stylesheet" href="style.css">
+ <style>
+  /* Hero Section */
+  .hero {
+    background: white;
+    color: #0a3d62; /* Navy Blue Text */
+    padding: 80px 40px; /* Increased padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 60px; /* Increased card padding */
+    width: 100%;
+    max-width: 1300px; /* Larger width */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-left {
+    flex: 1;
+    padding-right: 40px;
+  }
+
+  .hero-left h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #0a3d62;
+  }
+
+  .hero-left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1e3799;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  .cta-row {
+    display: flex;
+    gap: 20px;
+  }
+
+  .cta-btn {
+    background: #0a3d62;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  .cta-btn:hover {
+    background: #1e3799;
+  }
+
+  .secondary {
+    color: #0a3d62;
+    font-weight: bold;
+    text-decoration: none;
+    align-self: center;
+  }
+
+  .services-compact {
+    flex: 1;
+    background: #f8f9fa;
+    border-left: 4px solid #0a3d62;
+    padding: 30px 40px;
+    border-radius: 8px;
+    max-height: 500px; /* limit height so it doesn’t overflow */
+    overflow-y: auto;  /* makes it scrollable if too long */
+  }
+
+  .services-compact h3 {
+    margin-bottom: 15px;
+    color: #0a3d62;
+  }
+
+  .services-compact ul {
+    paddin
+
+<style>
+  /* Header Styling */
+  header {
+    background-color: #0a3d62; /* Navy/Deep Blue */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  header .logo {
+    height: 60px;
+    border-radius: 6px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #82ccdd; /* Lighter blue on hover */
+    text-decoration: underline;
+  }
+
+  /* Mobile Menu */
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background: #0a3d62;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 200px;
+      padding: 15px;
+    }
+
+    nav ul.active {
+      display: flex;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+  }
+</style>
+<style>
+  .about {
+    background: #ffffff;
+    padding: 80px 40px;
+    color: #0a3d62;
+    text-align: center;
+  }
+
+  .about-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  /* Urdu Title */
+  .about-title {
+    font-family: "Noto Nastaliq Urdu", "Arial", serif;
+    font-size: 40px;
+    font-weight: bold;
+    .about-title {
+  color: #0a3d62; /* Navy Blue */
+}
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .about-highlight {
+    font-size: 20px;
+    color: #1e3799;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #0a3d62;
+  }
+
+  .about-contact {
+    background: #f8f9fa;
+    border-left: 4px solid #0a3d62;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .about-contact a {
+    color: #0a3d62;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .about-contact a:hover {
+    text-decoration: underline;
+  }
+</style>
+<style>
+  .contact {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .contact-container {
+    max-width: 600px;
+    margin: auto;
+  }
+  form label {
+    display: block;
+    margin-bottom: 15px;
+    color: navy;
+    font-weight: bold;
+    text-align: left;
+  }
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid navy;
+    border-radius: 5px;
+  }
+  form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #004080;
+    box-shadow: 0 0 5px rgba(0,0,128,0.3);
+  }
+</style>
+<style>
+  
+</style>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="images/logo.jpg" alt="Logo" class="logo">
+    <nav>
+      
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://maps.app.goo.gl/6Ug8u5jyvXbMYTgY6" target="_blank">Find Us</a></li>
+        <li><a href="#about">Contact Info</a></li>
+      </ul>
+    </nav>
+    
+    <div class="menu-toggle">&#9776;</div> <!-- Hamburger for mobile -->
+  </header>
+
+   
+  <!-- HERO -->
+  <main class="hero" id="home">
+    <div class="hero-card" role="region" aria-labelledby="hero-title">
+      
+      <div class="hero-left">
+            <img src="images/services.jpg" alt="Hero Banner" style="width:100%; max-height:300px; object-fit:cover; border-radius:8px;">
+
+        <h1 id="hero-title">Farooq Brothers</h1>
+        <h2>Photostat &amp; Panaflex — Complete Printing Solutions</h2>
+        <p>
+          AutoCAD plotting, large-format color & map printing, binding, photostat,
+          custom shirts & mugs, composing and protective plastic coating — quality work delivered quickly.
+        </p>
+
+        <div class="cta-row">
+          <a href="#services" class="cta-btn" aria-label="Explore services">Explore Services</a>
+
+          <a class="secondary" href="#contact">Get a Quote</a>
+        </div>
+      </div>
+
+      <aside class="services-compact" aria-label="Quick services">
+        <h3>Selected Services</h3>
+        <ul>
+          <li>Auto CAD Plotting / Panel Printing</li>
+          <li>Large Size Color Photo / Map Printing</li>
+          <li>Color &amp; B/W Photostat</li>
+          <li>Thesis Printing / Photostat</li>
+          <li>School Class Charts Color Printing</li>
+          <li>Spiral / Strip / Tap Binding</li>
+          <li>Roller Banner / Panaflex Printing</li>
+          <li>FrontLit / BackLit Banners &amp; Boards</li>
+          <li>Shirt &amp; Mugs Printing</li>
+          <li>Binding &amp; Stationery</li>
+          <li>Computer Composing</li>
+          <li>Scanning, Photostat &amp; Plastic Coating of Maps</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+           <!-- services -->
+  <section id="services" class="services-section">
+  <div class="container">
+    <div class="services-grid">
+      
+      <section id="services">
+  <h2>Our Services</h2>
+  <div class="services-container">
+ 
+
+
+    
+  <div class="services-container">
+
+    <!-- Service 1 -->
+    <div class="service-box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIjqtuBL2uSoKcZLzY27ofKQXANwFkUnWJxw&s" alt="Shirt and Mugs Printing">
+      <h3>Shirt & Mugs Printing</h3>
+      <p>Custom designs printed on shirts, mugs, and other gift items.</p>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-box">
+      <img src="https://pictures-uganda.jijistatic.com/23760169_NjIwLTYyMC04NGI4YmNlMjk0.jpg" alt="Cape and Mouse Bed Printing">
+      <h3>Cape & Mouse Bed Printing</h3>
+      <p>Personalized cape and mouse bed printing with creative designs.</p>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-box">
+      <img src="https://d1mv2b9v99cq0i.cloudfront.net/eyJidWNrZXQiOiJ3ZWItbmluamEtaW1hZ2VzIiwia2V5IjoiY3FzdGF0aW9uZXJ5XC9pbWFnZXNcL3Byb2RpbWdcLzY3ODhfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQ4MCwiaGVpZ2h0Ijo0ODAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX19LCJ2ZXJzaW9uIjoiNjQwNjE0N2RiZTFlNzU3YTQwYmY2YmI4ZDcxNGM3ODJiYzhjNmYxNSJ9" alt="Binding Stationery">
+      <h3>Binding & Stationery</h3>
+      <p>Professional binding and stationery services for businesses and schools.</p>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="service-box">
+      <img src="https://www.worldofmaps.com/images/w_scanner.gif" alt="Scanning and Printing of Maps">
+      <h3>Scanning & Printing of Maps</h3>
+      <p>High-resolution scanning and printing of geographical and technical maps.</p>
+    </div>
+
+    <!-- Service 5 -->
+    <div class="service-box">
+      <img src="https://5.imimg.com/data5/JP/SC/MY-3301274/color-photocopier-machine-500x500.jpg" alt="Color and Simple Photostat">
+      <h3>Color / Simple Photostat</h3>
+      <p>Fast and accurate color or black-and-white photocopy services.</p>
+    </div>
+
+    <!-- Service 6 -->
+    <div class="service-box">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2024/3/399396910/EO/IG/RA/15197190/map-photocopying-services.png" alt="Photostat of Maps">
+      <h3>Photostat of Maps</h3>
+      <p>Specialized photostatting for large and detailed maps.</p>
+    </div>
+
+    <!-- Service 7 -->
+    <div class="service-box">
+      <img src="https://img.freepik.com/free-photo/top-view-desk-concept-with-woman-hands_23-2148223113.jpg?semt=ais_hybrid&w=740&q=80" alt="Computer Composing">
+      <h3>Computer Composing</h3>
+      <p>Professional Urdu and English composing with formatting and design.</p>
+    </div>
+
+    <!-- Service 8 -->
+    <div class="service-box">
+      <img src="https://m.media-amazon.com/images/I/81BTMvSAY1L._UF1000,1000_QL80_.jpg" alt="Plastic Coating of Maps">
+      <h3>Plastic Coating of Maps</h3>
+      <p>Durable plastic coating to protect maps and important documents.</p>
+    </div>
+ <!-- Wallpapers Service Card -->
+<div style="border:1px solid #ddd; padding:20px; border-radius:8px; width:200px; text-align:center;">
+  <h3 style="color:#000080;">Wallpapers</h3>
+  <img src="/farooq-brothers-main/wallpapers/w1.jpg" alt="Wallpaper Preview" style="width:100%; border-radius:5px; margin:10px 0;">
+  <button onclick="document.getElementById('wallpaperModal').style.display='block'"
+          style="background:#000080; color:white; padding:8px 15px; border:none; border-radius:5px; cursor:pointer;">
+    View Gallery
+  </button>
+</div>
+
+<!-- Wallpapers Modal -->
+<div id="wallpaperModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.8); z-index:1000; overflow:auto; padding:40px;">
+
+  <!-- Close Button -->
+  <span onclick="document.getElementById('wallpaperModal').style.display='none'"
+        style="position:absolute; top:20px; right:30px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+
+  <!-- Grid Gallery -->
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:15px; margin-top:40px;">
+    <img src="/farooq-brothers-main/wallpapers/w1.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w2.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w3.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w4.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w5.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w6.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w7.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w8.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w9.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w10.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w11.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w12.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w13.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w14.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w15.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w17.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w18.jpg" style="width:100%; border-radius:8px;">
+    <img src="/farooq-brothers-main/wallpapers/w19.jpg" style="width:100%; border-radius:8px;">
+  </div>
+</div>
+<!-- wallpaper end -->
+  </div>
+</section>
+
+
+
+
+  
+
+<!-- ABOUT US -->
+<section id="about" class="about">
+  <div class="about-container">
+    <h2 class="about-title">فاروق برادرز <br> پینا فلیکس پرنٹرز</h2>
+    
+    <p class="about-highlight">
+      <strong>Election Campaign 2024</strong><br>
+      All Kinds of <strong>Banners, Posters, Bill Boards, Stickers</strong> are printed here.
+    </p>
+
+    <p class="about-text">
+      <strong>Farooq Brothers</strong> offers <em>Photostat &amp; Panaflex — Complete Printing Solutions</em>.  
+      We specialize in AutoCAD plotting, large-format color &amp; map printing, binding, photostat, custom shirts &amp; mugs, composing, and protective plastic coating — delivering quality work quickly with professional results.
+    </p>
+
+    <div class="about-contact">
+      <p>📍 Shop #1, Mohib Plaza, Usman Joghazai Street, Behind Dawood Shopping Centre, Fatima Jinnah Road, Quetta</p>
+      <p>📞 <a href="tel:0812826688">081-2826688</a> / 
+         <a href="tel:03331443389">0333-1443389</a> / 
+         <a href="tel:03128015909">0312-8015909</a></p>
+      <p>✉️ <a href="mailto:farooqflex@gmail.com">farooqflex@gmail.com</a></p>
+      <img src="images/services 2.jpg" alt="" style="width:100%; max-height:800px; object-fit:cover; border-radius:8px;">
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM (FormSubmit + honeypot + redirect handling) -->
+<section id="contact" class="contact">
+  <div class="contact-container">
+    <h2 style="color:navy;">Contact Us</h2>
+
+    <form id="contactForm" action="https://formsubmit.co/farooqflex@gmail.com" method="POST">
+      
+      <!-- Honeypot field (invisible to humans) -->
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+      <!-- Disable captcha -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Redirect after success -->
+      <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+
+      <!-- Email subject -->
+      <input type="hidden" name="_subject" value="New Contact From Farooq Brothers Website">
+
+      <!-- User fields -->
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Phone
+        <input type="tel" name="phone">
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+
+      <button type="submit" style="background-color:#0a3d62; color:#ffffff; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+        Send Message
+      </button>
+    </form>
+
+    <div id="formMessage" style="display:none; margin-top:12px; color:green; font-weight:bold;"></div>
+  </div>
+</section>
+ <!-- FOOTER -->
+<footer style=" padding:20px 0; text-align:center;">
+  <p>© 2025 Farooq Brothers — All Rights Reserved</p>
+
+  <div class="container" style="max-width:1100px; margin:auto; padding:0 20px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center;">
+    
+    <!-- Logo + Title -->
+    <div style="display:flex; align-items:center; margin-bottom:10px;">
+      <img src="images/logo.jpg" alt="Farooq Brothers" style="width:50px; height:50px; border-radius:50%; margin-right:10px;">
+      <span style="font-size:1.4rem; font-weight:bold;">Farooq Brothers</span>
+    </div>
+
+    <!-- Contact Info -->
+    <div style="font-size:0.9rem; line-height:1.6;">
+      <a href="https://maps.app.goo.gl/6Ug8u5jyvXbMYTgY6" target="_blank" style="color:#ffffff; text-decoration:underline;">
+        Shop #1 Mohib Plaza, Usman Joghazai Street, Behind Dawood Shopping Centre, Fatima Jinnah Road Quetta
+      </a> <br>
+      📧 <a href="mailto:farooqflex@gmail.com" style="color:white; text-decoration:underline;">farooqflex@gmail.com</a>
+        <p style="margin-top:10px;">
+    𝐃𝐞𝐬𝐢𝐠𝐧 𝐚𝐧𝐝 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐛𝐲 
+    <a href="https://hadi-folio.vercel.app/" target="_blank" style="color:#ffffff; text-decoration:none; font-weight:bold;">
+      𝓗𝓪𝓭𝓲
+    </a>
+  </p>
+    </div>
+
+    
+
+  <script src="script.js"></script>
+  <script>
+  // Small toggle
+  document.querySelectorAll('#wallpapers').forEach(div => div.style.display = "none");
+</script>
+</body>
+</html>

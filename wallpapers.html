@@ -1,1 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printing Press & Wallpaper Shop</title>
+  <link rel="stylesheet" href="style.css">
+ <style>
+  /* Hero Section */
+  .hero {
+    background: white;
+    color: #0a3d62; /* Navy Blue Text */
+    padding: 80px 40px; /* Increased padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .hero-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 60px; /* Increased card padding */
+    width: 100%;
+    max-width: 1300px; /* Larger width */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-left {
+    flex: 1;
+    padding-right: 40px;
+  }
+
+  .hero-left h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #0a3d62;
+  }
+
+  .hero-left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1e3799;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  .cta-row {
+    display: flex;
+    gap: 20px;
+  }
+
+  .cta-btn {
+    background: #0a3d62;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  .cta-btn:hover {
+    background: #1e3799;
+  }
+
+  .secondary {
+    color: #0a3d62;
+    font-weight: bold;
+    text-decoration: none;
+    align-self: center;
+  }
+
+  .services-compact {
+    flex: 1;
+    background: #f8f9fa;
+    border-left: 4px solid #0a3d62;
+    padding: 30px 40px;
+    border-radius: 8px;
+    max-height: 500px; /* limit height so it doesn’t overflow */
+    overflow-y: auto;  /* makes it scrollable if too long */
+  }
+
+  .services-compact h3 {
+    margin-bottom: 15px;
+    color: #0a3d62;
+  }
+
+  .services-compact ul {
+    paddin
+
+<style>
+  /* Header Styling */
+  header {
+    background-color: #0a3d62; /* Navy/Deep Blue */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  header .logo {
+    height: 60px;
+    border-radius: 6px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #82ccdd; /* Lighter blue on hover */
+    text-decoration: underline;
+  }
+
+  /* Mobile Menu */
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background: #0a3d62;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 200px;
+      padding: 15px;
+    }
+
+    nav ul.active {
+      display: flex;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+  }
+</style>
+<style>
+  .about {
+    background: #ffffff;
+    padding: 80px 40px;
+    color: #0a3d62;
+    text-align: center;
+  }
+
+  .about-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  /* Urdu Title */
+  .about-title {
+    font-family: "Noto Nastaliq Urdu", "Arial", serif;
+    font-size: 40px;
+    font-weight: bold;
+    .about-title {
+  color: #0a3d62; /* Navy Blue */
+}
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .about-highlight {
+    font-size: 20px;
+    color: #1e3799;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #0a3d62;
+  }
+
+  .about-contact {
+    background: #f8f9fa;
+    border-left: 4px solid #0a3d62;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .about-contact a {
+    color: #0a3d62;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .about-contact a:hover {
+    text-decoration: underline;
+  }
+</style>
+<style>
+  .contact {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .contact-container {
+    max-width: 600px;
+    margin: auto;
+  }
+  form label {
+    display: block;
+    margin-bottom: 15px;
+    color: navy;
+    font-weight: bold;
+    text-align: left;
+  }
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid navy;
+    border-radius: 5px;
+  }
+  form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #004080;
+    box-shadow: 0 0 5px rgba(0,0,128,0.3);
+  }
+</style>
+<style>
+  
+</style>
+<style>
+  /* Gallery grid */
+.wallpapers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+.wallpapers-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease;
+  box-shadow: 0 6px 18px rgba(10,10,10,0.06);
+}
+.wallpapers-grid img:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 14px 30px rgba(10,10,10,0.12); }
+
+/* Lightbox / Modal */
+#wp-lightbox {
+  position: fixed;
+  inset: 0;
+  display: none; /* toggled by JS */
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.85);
+  z-index: 99999;
+  padding: 20px;
+}
+#wp-lightbox.active { display: flex; }
+
+.wp-lightbox-inner {
+  max-width: 1100px;
+  width: 100%;
+  max-height: 92vh;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Main preview image */
+.wp-preview {
+  width: 100%;
+  height: auto;
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #111;
+}
+
+/* Right panel: caption + controls */
+.wp-side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 220px;
+  max-width: 300px;
+  color: #fff;
+}
+.wp-caption { font-size: 15px; color: #f1f1f1; line-height:1.4; }
+.wp-actions { display:flex; gap:10px; align-items:center; }
+
+/* Buttons */
+.wp-btn {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight:600;
+}
+.wp-btn:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
+
+/* Prev / Next arrows overlayed */
+.wp-nav {
+  position:absolute;
+  left: 12px;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display:flex;
+  justify-content:space-between;
+  pointer-events:none;
+}
+.wp-arrow {
+  pointer-events: auto;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
+.wp-arrow:hover { background: rgba(0,0,0,0.6); transform: scale(1.05); }
+
+/* Close button */
+.wp-close {
+  position:absolute;
+  top:18px;
+  right:20px;
+  background: transparent;
+  border: none;
+  color:#fff;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* Responsive: stack side panel on small screens */
+@media (max-width:880px) {
+  .wp-lightbox-inner { grid-template-columns: 1fr; }
+  .wp-side { max-width: none; min-width: auto; order: 2; }
+  .wp-close { top:8px; right:12px; }
+}
+</style>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="images/logo.jpg" alt="Logo" class="logo">
+    <nav>
+      
+      <ul>
+        <li><a href="/index.html#home">Home</a></li>
+        <li><a href="/index.html#services">Services</a></li>
+         <li style="position:relative;">
+  <a href="wallpapers.html" style="color:white; text-decoration:none; position:relative; display:inline-block;">
+    Wallpapers
+    <!-- Badge -->
+    <img src="images/newflash2.gif" alt="NEW" 
+         style="position:absolute; top:-8px; right:-25px; width:30px; height:auto;">
+  </a>
+  <ul style="display:none; position:absolute; top:100%; left:0; background:white; padding:10px; list-style:none; min-width:180px; border:1px solid #ccc; border-radius:5px;">
+    <li><a href="wallpapers.html#media-wallpapers"  style="color:#000080; text-decoration:none; display:block; padding:5px;">Media Wallpapers</a></li>
+<li><a href="wallpapers.html#wallpaperwithborders"  style="color:#000080; text-decoration:none; display:block; padding:5px;">Wallpapers With Borders</a></li>
+<li><a href="wallpapers.html#3dwallpapers"  style="color:#000080; text-decoration:none; display:block; padding:5px;">3D Wallpapers</a></li>
+
+  </ul>
+</li>
+        <li><a href="/index.html#about">About Us</a></li>
+        <li><a href="/index.html#contact">Contact</a></li>
+        <li><a href="https://maps.app.goo.gl/6Ug8u5jyvXbMYTgY6" target="_blank">Find Us</a></li>
+        <li><a href="/index.html#about">Contact Info</a></li>
+      </ul>
+    </nav>
+    
+    <div class="menu-toggle">&#9776;</div> <!-- Hamburger for mobile -->
+  </header>
+<br><br>
+
+
+
+<section style="text-align:center; padding: 40px 20px; background: #f8f8f8;">
+  <h1 style="font-size: 2.5rem; font-weight: bold; color: #6a0dad; margin-bottom: 15px;">
+    Explore Our Exclusive Wallpapers Collection
+  </h1>
+  <p style="font-size: 1.1rem; max-width: 800px; margin: auto; line-height: 1.6; color: #444;">
+    Discover high-quality wallpapers across different categories including 
+    <strong>Media Wallpapers</strong>, <strong>Wallpapers with Borders</strong>, 
+    and <strong>3D Wallpapers</strong>. Click on any wallpaper to preview in full size 
+    and find the perfect design that fits your style.
+  </p>
+</section>
+
+
+
+<!-- Example: Media Wallpapers -->
+<div id="media-wallpapers" style="padding:40px 20px;">
+  <h2 style="position:relative; display:inline-block; color:#6a0dad; font-weight:bold;">
+    Media Wallpapers
+    <img src="/images/newflash2.gif" style="position:absolute; top:-10px; right:-40px; width:40px;">
+  </h2>
+
+  <div class="wallpapers-grid">
+    <img class="wallpaper-item" data-caption="Media Wallpaper 1" src="/wallpapers//w1.jpg" loading="lazy" alt="Media 1" >
+    <img class="wallpaper-item" data-caption="Media Wallpaper 2" src="/wallpapers/w2.jpg" loading="lazy" alt="Media 2">
+    <img class="wallpaper-item" data-caption="Media Wallpaper 3" src="/wallpapers/w3.jpg" loading="lazy" alt="Media 3">
+    <!-- ... repeat for all media images ... -->
+  </div>
+</div>
+
+<!-- Wallpaper with Borders -->
+<div id="wallpaperwithborders" style="padding:40px 20px;">
+  <h2 style="position:relative; display:inline-block; color:#6a0dad; font-weight:bold;">
+    Wallpapers With Borders
+    <img src="/images/newflash2.gif" style="position:absolute; top:-10px; right:-40px; width:40px;">
+  </h2>
+
+  <div class="wallpapers-grid">
+    <img class="wallpaper-item" data-caption="Border Wallpaper 1" src="wallpapers/w1.jpg" loading="lazy" alt="Border 1">
+    <img class="wallpaper-item" data-caption="Border Wallpaper 2" src="/wallpapers/w2.jpg" loading="lazy" alt="Border 2">
+    <!-- ... -->
+  </div>
+</div>
+
+<!-- 3D Wallpapers -->
+<div id="3dwallpapers" style="padding:40px 20px;">
+  <h2 style="position:relative; display:inline-block; color:#6a0dad; font-weight:bold;">
+    3D Wallpapers
+    <img src="/images/newflash2.gif" style="position:absolute; top:-10px; right:-40px; width:40px;">
+  </h2>
+
+  <div class="wallpapers-grid">
+    <img class="wallpaper-item" data-caption="3D Wallpaper 1" src="/wallpapers/w1.jpg" loading="lazy" alt="3D 1">
+    <img class="wallpaper-item" data-caption="3D Wallpaper 2" src="/wallpapers/w2.jpg" loading="lazy" alt="3D 2">
+    <!-- ... -->
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- FOOTER -->
+<footer style=" padding:20px 0; text-align:center;">
+  <p>©️ 2025 Farooq Brothers — All Rights Reserved</p>
+
+  <div class="container" style="max-width:1100px; margin:auto; padding:0 20px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center;">
+    
+    <!-- Logo + Title -->
+    <div style="display:flex; align-items:center; margin-bottom:10px;">
+      <img src="images/logo.jpg" alt="Farooq Brothers" style="width:50px; height:50px; border-radius:50%; margin-right:10px;">
+      <span style="font-size:1.4rem; font-weight:bold;">Farooq Brothers</span>
+    </div>
+
+    <!-- Contact Info -->
+    <div style="font-size:0.9rem; line-height:1.6;">
+      <a href="https://maps.app.goo.gl/6Ug8u5jyvXbMYTgY6" target="_blank" style="color:#ffffff; text-decoration:underline;">
+        Shop #1 Mohib Plaza, Usman Joghazai Street, Behind Dawood Shopping Centre, Fatima Jinnah Road Quetta
+      </a> <br>
+      📧 <a href="mailto:farooqflex@gmail.com" style="color:white; text-decoration:underline;">farooqflex@gmail.com</a>
+        
+      <p style="margin-top:10px;">
+    𝐃𝐞𝐬𝐢𝐠𝐧 𝐚𝐧𝐝 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐛𝐲 
+    <a href="https://hadi-folio.vercel.app/" target="_blank" style="color:#ffffff; text-decoration:none; font-weight:bold;">
+      𝓗𝓪𝓭𝓲
+    </a>
+    
+</p> 
+<!-- Social Icons -->
+<div style="margin-top:15px;">
+  <a href="https://www.tiktok.com/@farooqbrotherpanaflex?_t=ZS-90589dOpUQ9&_r=1" target="_blank" style="margin:0 8px;">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" style="width:25px; height:25px; filter:invert(1);">
+  </a>
+  <a href="YOUR_FACEBOOK_URL" target="_blank" style="margin:0 8px;">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" style="width:25px; height:25px; filter:invert(1);">
+  </a>
+  <a href="YOUR_WHATSAPP_URL" target="_blank" style="margin:0 8px;">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width:25px; height:25px; filter:invert(1);">
+  </a>
+  <a href="YOUR_INSTAGRAM_URL" target="_blank" style="margin:0 8px;">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:25px; height:25px; filter:invert(1);">
+  </a>
+   <a href="https://maps.app.goo.gl/6Ug8u5jyvXbMYTgY6" target="_blank" style="margin:0 8px;">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlemaps.svg" alt="Google Maps" style="width:25px; height:25px; filter:invert(1);">
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="script.js"></script>
+  <script>
+  // Small toggle
+  document.querySelectorAll('#wallpapers').forEach(div => div.style.display = "none");
+</script>
+
+<script>
+  document.querySelectorAll("nav ul li").forEach(item => {
+    item.addEventListener("mouseenter", () => {
+      let dropdown = item.querySelector("ul");
+      if (dropdown) dropdown.style.display = "block";
+    });
+    item.addEventListener("mouseleave", () => {
+      let dropdown = item.querySelector("ul");
+      if (dropdown) dropdown.style.display = "none";
+    });
+  });
+</script>
+<!-- Floating TikTok Icon -->
+<a href="https://www.tiktok.com/@farooqbrotherpanaflex?_t=ZS-90589dOpUQ9&_r=1" target="_blank" 
+   style="position:fixed; bottom:20px; right:20px; 
+          background:#000; padding:12px; border-radius:50%; 
+          box-shadow:0 4px 10px rgba(0,0,0,0.3); 
+          z-index:9999; animation: pulse 1.5s infinite;">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" 
+       alt="TikTok" 
+       style="width:30px; height:30px; filter:invert(1);">
+</a>
+
+<!-- Pulse Animation -->
+<style>
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow:0 0 5px #ff0050; }
+  50% { transform: scale(1.1); box-shadow:0 0 20px #ff0050; }
+  100% { transform: scale(1); box-shadow:0 0 5px #ff0050; }
+}
+</style>
+<script>
+(function(){
+  const items = Array.from(document.querySelectorAll('.wallpaper-item'));
+  if(!items.length) return;
+
+  // Build a list of sources & captions
+  const gallery = items.map(img => ({
+    src: img.getAttribute('src'),
+    caption: img.getAttribute('data-caption') || img.getAttribute('alt') || ''
+  }));
+
+  // Create lightbox DOM
+  const lightbox = document.createElement('div');
+  lightbox.id = 'wp-lightbox';
+  lightbox.innerHTML = `
+    <button class="wp-close" aria-label="Close">&times;</button>
+    <div class="wp-lightbox-inner" role="dialog" aria-modal="true">
+      <div style="position:relative;">
+        <img class="wp-preview" src="" alt="Preview image">
+        <div class="wp-nav">
+          <button class="wp-arrow" data-dir="prev" aria-label="Previous">&#10094;</button>
+          <button class="wp-arrow" data-dir="next" aria-label="Next">&#10095;</button>
+        </div>
+      </div>
+      <aside class="wp-side">
+        <div class="wp-caption"></div>
+        <div class="wp-actions">
+          <a class="wp-btn wp-download" download>Download</a>
+          <button class="wp-btn wp-open" aria-label="Open in new tab">Open in new tab</button>
+        </div>
+      </aside>
+    </div>
+  `;
+  document.body.appendChild(lightbox);
+
+  const preview = lightbox.querySelector('.wp-preview');
+  const captionEl = lightbox.querySelector('.wp-caption');
+  const downloadBtn = lightbox.querySelector('.wp-download');
+  const openBtn = lightbox.querySelector('.wp-open');
+  const closeBtn = lightbox.querySelector('.wp-close');
+  const prevBtn = lightbox.querySelector('[data-dir="prev"]');
+  const nextBtn = lightbox.querySelector('[data-dir="next"]');
+
+  let currentIndex = 0;
+
+  // Open function
+  function openAt(index){
+    currentIndex = (index + gallery.length) % gallery.length;
+    const item = gallery[currentIndex];
+    preview.src = item.src;
+    preview.alt = item.caption || '';
+    captionEl.textContent = item.caption || '';
+    downloadBtn.href = item.src;
+    downloadBtn.setAttribute('download', item.src.split('/').pop());
+    openBtn.onclick = () => window.open(item.src, '_blank');
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  // Close function
+  function closeLB(){
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+    preview.src = '';
+  }
+
+  // Event: clicking thumbnails
+  items.forEach((el, idx) => {
+    el.addEventListener('click', (e)=>{
+      e.preventDefault();
+      openAt(idx);
+    });
+  });
+
+  // Navigation
+  prevBtn.addEventListener('click', ()=> openAt(currentIndex - 1));
+  nextBtn.addEventListener('click', ()=> openAt(currentIndex + 1));
+
+  // Close handlers
+  closeBtn.addEventListener('click', closeLB);
+  lightbox.addEventListener('click', (e)=>{
+    if(e.target === lightbox) closeLB(); // click on overlay
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e)=>{
+    if(!lightbox.classList.contains('active')) return;
+    if(e.key === 'Escape') closeLB();
+    if(e.key === 'ArrowLeft') openAt(currentIndex - 1);
+    if(e.key === 'ArrowRight') openAt(currentIndex + 1);
+  });
+
+  // Optional: prefetch next image for smoother transitions
+  function prefetch(idx){
+    const i = (idx + gallery.length) % gallery.length;
+    const img = new Image();
+    img.src = gallery[i].src;
+  }
+  preview.addEventListener('load', () => prefetch(currentIndex + 1));
+})();
+</script>
+
+</body>
+</html>
+      
